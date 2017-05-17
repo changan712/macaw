@@ -1,0 +1,14 @@
+<p-panel header="Calendar">
+
+    basic
+    <p-calendar [(ngModel)]="date"></p-calendar>
+    {{date}}
+
+    <div class="line"></div>
+
+    inline
+    <p-calendar inline="true"  [dateFormat]="'dd/MM/y'" [(ngModel)]="date2"></p-calendar> {{date2}} <div class="line"></div>
+    <div class="line"></div>
+    time
+    <p-calendar  [(ngModel)]="time" timeOnly="true"></p-calendar> {{time}}
+</p-panel>

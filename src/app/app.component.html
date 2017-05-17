@@ -2,16 +2,16 @@
 
     <ul>
 
-        <li *ngFor="let item of list">
-            <a [routerLink]="[item]"> {{item}}</a>
+        <li *ngFor="let item of list" >
+            <a [routerLink]="[item]" routerLinkActive="active"> {{item}}</a>
 
         </li>
     </ul>
 
 </nav>
 <div class="main">
-    <header>
-    </header>
+   <!-- <header>
+    </header>-->
     <router-outlet></router-outlet>
 
 </div>

@@ -1,11 +1,20 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { AlgorithmComponent } from './algorithm/algorithm.component';
+import {NgModule} from '@angular/core';
+
+
+import {OthersRoutingModule} from './others-routing.module';
+import {AlgorithmComponent} from "./algorithm/algorithm.component";
+import {SharedModule} from "../shared/shared.module";
+import {OthersComponent} from "./others.component";
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [AlgorithmComponent]
+    imports: [
+        SharedModule,
+        OthersRoutingModule
+    ],
+    declarations: [
+        AlgorithmComponent,
+        OthersComponent
+    ]
 })
-export class OthersModule { }
+export class OthersModule {
+}

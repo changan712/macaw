@@ -1,0 +1,9 @@
+<div class="p">
+
+    <a pButton class="ui-button-success" [routerLink]="item.toLowerCase()" routerLinkActive="ui-button-warning" [label]="item" *ngFor="let item of links"></a>
+</div>
+
+<div class="p">
+
+   <router-outlet></router-outlet>
+</div>

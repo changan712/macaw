@@ -1,7 +1,26 @@
-
-
-
 <p-panel header="auto-complete">
 
+    <p-autoComplete [(ngModel)]="text" (completeMethod)="search($event)" [dropdown]="true"
+                    [suggestions]="countries"></p-autoComplete>
+    {{text}}
+    <div class="line"></div>
 
+    ObjectData:
+    <p-autoComplete [(ngModel)]="text2"  [multiple]="true"  (completeMethod)="search2($event)" field="label"
+                    [suggestions]="countries2"></p-autoComplete>
+    {{text2}}
+
+    <div class="line"></div>
+
+    Templating:
+    <p-autoComplete [(ngModel)]="text3"  (completeMethod)="search2($event)" field="label"
+                    [suggestions]="countries2">
+
+        <ng-template let-country pTemplate="item">
+            <span class="pull-right">{{country.id}}</span>
+            {{country.label}}
+        </ng-template>
+
+    </p-autoComplete>
+    {{text3}}
 </p-panel>

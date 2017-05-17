@@ -1,0 +1,15 @@
+<p-panel header="Chips">
+
+    <p-chips [(ngModel)]="values"></p-chips>
+    {{values|json}}
+
+
+    <div class="line"></div>
+    <p-chips max="3" placeholder="input it" [(ngModel)]="values2">
+        <ng-template let-item pTemplate="item">
+            {{item}} <i class="fa fa-user"></i>
+        </ng-template>
+
+    </p-chips>
+
+</p-panel>

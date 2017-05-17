@@ -1,0 +1,17 @@
+<p-panel header="checkbox">
+    <p-checkbox name="groupname" label="val 1" value="val1" [(ngModel)]="selectedValues"></p-checkbox>
+
+
+    <p-checkbox name="groupname"   label="val 2"  value="val2" [(ngModel)]="selectedValues"></p-checkbox>
+
+
+    <span class="m-h ">|</span>
+    {{selectedValues}}
+
+    <div class="line"></div>
+
+
+
+    <p-checkbox [(ngModel)]="value" binary="true"></p-checkbox> {{value}}
+
+</p-panel>

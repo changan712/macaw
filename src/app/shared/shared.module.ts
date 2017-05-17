@@ -5,6 +5,7 @@ import {FormsModule} from '@angular/forms';
 
 import {ButtonModule} from "primeng/components/button/button";
 import {TabViewModule} from "primeng/components/tabview/tabview";
+import {PanelModule} from "primeng/components/panel/panel";
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import {TabViewModule} from "primeng/components/tabview/tabview";
         FormsModule,
         TabViewModule,
         ButtonModule,
+        PanelModule,
 
     ],
     declarations: []

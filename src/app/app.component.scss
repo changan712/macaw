@@ -1,5 +1,7 @@
 @import "../style/varible";
 
+$navNgColor:desaturate(darken(map_get($theme, info), 30%), 40%);
+
 :host{
   display:flex;
   height:100%;
@@ -7,24 +9,26 @@
 
 nav{
   flex:0 0 200px;
-  padding:20px 0;
+  padding:50px 0;
 
-  background:desaturate(darken(map_get($theme, info), 30%), 40%);
+  background:$navNgColor;
 
   > ul{
 
     > li{
-
+      border-bottom:1px solid rgba($white, .1);
       color:$white;
-      &:not(:last-child){
-        border-bottom:1px solid rgba($white, .3)
+      &:first-child{
+        border-top:1px solid rgba($white, .1)
       }
-    ;
+
       > a{
-        padding:8px 10px;
+        padding:18px 10px;
         display:block;
         color:$white;
-
+        &.active{
+          background:darken($navNgColor, 10%);
+        }
       }
     }
   }
