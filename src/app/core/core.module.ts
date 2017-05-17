@@ -1,8 +1,9 @@
 import {NgModule, SkipSelf, Optional} from '@angular/core';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 
 @NgModule({
-    imports: [],
+    imports: [BrowserAnimationsModule],
     declarations: []
 })
 export class CoreModule {
