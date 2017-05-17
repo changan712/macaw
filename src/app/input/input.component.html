@@ -1,0 +1,8 @@
+<div class="p">
+    <div>
+        <a pButton class="ui-button-info" [routerLink]="[item.toLowerCase()]" [label]="item"
+           *ngFor="let item of links"></a>
+
+    </div>
+    <router-outlet></router-outlet>
+</div>

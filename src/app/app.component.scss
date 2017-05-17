@@ -1,3 +1,4 @@
+@import "../style/varible";
 
 :host{
   display:flex;
@@ -6,7 +7,38 @@
 
 nav{
   flex:0 0 200px;
+  padding:20px 0;
 
+  background:desaturate(darken(map_get($theme, info), 30%), 40%);
+
+  > ul{
+
+    > li{
+
+      color:$white;
+      &:not(:last-child){
+        border-bottom:1px solid rgba($white, .3)
+      }
+    ;
+      > a{
+        padding:8px 10px;
+        display:block;
+        color:$white;
+
+      }
+    }
+  }
+
+}
+
+.main{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  > header{
+    flex:0 0 150px;
+    border-bottom:1px solid $color_border;
+  }
 }
 
 

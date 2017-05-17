@@ -1,1 +1,31 @@
-@import "~primeng/resources/themes/voclain/theme";
+
+/* Severity Buttons */
+/* Secondary */
+
+@mixin buttons($theme) {
+
+  @each $key, $value in $theme{
+    .ui-button.ui-button-#{$key}.ui-state-default{
+      background-color:$value;
+      @if $key != 'secondary'{
+        color:#fff;
+        border-color:$value;
+      } @else{
+        color:#333;
+        border-color:#333;
+      }
+
+    }
+    .ui-button.ui-button-#{$key}:enabled:hover,
+    .ui-button.ui-button-#{$key}:focus{
+      background-color:darken($value, 7%);
+    }
+
+    .ui-button.ui-button-#{$key}:enabled:active{
+      background-color:darken($value, 15%);
+    }
+  }
+
+}
+
+

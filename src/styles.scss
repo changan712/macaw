@@ -1,16 +1,45 @@
 @import "style/_com";
 @import "style/_typography";
-@import "~primeng/resources/primeng.css";
 @import "~primeng/resources/themes/omega/theme.css";
+@import "~primeng/resources/primeng.css";
 @import "~font-awesome/css/font-awesome.min.css";
-@import "~font-awesome/css/font-awesome.min.css";
+
+@import "style/varible";
+@import "style/theme";
+
+@include buttons($theme);
+
+@import "style/com";
+@include align();
+@include mp();
+@include fontSize();
+
+html{
+  font-size:62.5%
+}
+
+a{
+  text-decoration:none;
+}
 
 body{
   padding:0;
   margin:0;
+  color:$color_txt;
+  font-size:1.4rem;
 
 }
 
 body, html{
   height:100%;
+}
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+li, ul, dl, dd{
+  list-style:none;
 }

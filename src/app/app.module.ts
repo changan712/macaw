@@ -6,7 +6,6 @@ import {AppComponent} from './app.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {SharedModule} from "./shared/shared.module";
 import {CoreModule} from "./core/core.module";
-import {ButtonModule} from "primeng/components/button/button";
 
 
 @NgModule({
@@ -18,8 +17,6 @@ import {ButtonModule} from "primeng/components/button/button";
         AppRoutingModule,
         SharedModule,
         CoreModule,
-        ButtonModule
-
     ],
     providers: [],
     bootstrap: [AppComponent]
