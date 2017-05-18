@@ -6,6 +6,8 @@ import {AppComponent} from './app.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {SharedModule} from "./shared/shared.module";
 import {CoreModule} from "./core/core.module";
+import {GrowlModule} from "primeng/components/growl/growl";
+
 
 
 @NgModule({
@@ -16,6 +18,7 @@ import {CoreModule} from "./core/core.module";
         BrowserModule,
         AppRoutingModule,
         SharedModule,
+        GrowlModule,
         CoreModule,
     ],
     providers: [],

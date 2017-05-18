@@ -15,6 +15,11 @@ const routes: Routes = [
 
     },
     {
+        path: 'button',
+        loadChildren: 'app/button/button.module#ButtonModule'
+
+    },
+    {
         path: 'others',
         loadChildren: 'app/others/others.module#OthersModule'
 
