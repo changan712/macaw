@@ -9,7 +9,7 @@ import {AutoCompleteComponent} from "./auto-complete/auto-complete.component";
 })
 export class InputComponent implements OnInit {
 
-    links = ['AutoComplete','Calendar','Checkbox','Chips'];
+    links = ['AutoComplete','Calendar','Checkbox','Chips','Editor'];
 
     constructor() {
     }

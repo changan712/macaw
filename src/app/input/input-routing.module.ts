@@ -5,6 +5,7 @@ import {InputComponent} from "./input.component";
 import {CalendarComponent} from "./calendar/calendar.component";
 import {CheckboxComponent} from "./checkbox/checkbox.component";
 import {ChipsComponent} from "./chips/chips.component";
+import {EditorComponent} from "./editor/editor.component";
 
 
 const routes: Routes = [{
@@ -29,6 +30,10 @@ const routes: Routes = [{
         {
             path: 'chips',
             component: ChipsComponent,
+        },
+        {
+            path: 'editor',
+            component: EditorComponent,
         }
 
 

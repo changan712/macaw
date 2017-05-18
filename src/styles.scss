@@ -3,8 +3,15 @@
 @import "~primeng/resources/themes/omega/theme.css";
 @import "~primeng/resources/primeng.css";
 @import "~font-awesome/css/font-awesome.min.css";
+
+//quill
+@import "~quill/dist/quill.core.css";
+@import "~quill/dist/quill.snow.css";
+
+
 @import "style/varible";
 @import "style/theme";
+
 
 @include buttons($theme);
 

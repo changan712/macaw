@@ -14,6 +14,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import {CheckboxModule} from "primeng/components/checkbox/checkbox";
 import { ChipsComponent } from './chips/chips.component';
 import {ChipsModule} from "primeng/components/chips/chips";
+import { EditorComponent } from './editor/editor.component';
+import {EditorModule} from "primeng/components/editor/editor";
 
 
 @NgModule({
@@ -24,9 +26,10 @@ import {ChipsModule} from "primeng/components/chips/chips";
         CalendarModule,
         CheckboxModule,
         ChipsModule,
+        EditorModule,
 
     ],
-    declarations: [AutoCompleteComponent, InputComponent,  CalendarComponent, CheckboxComponent, ChipsComponent,]
+    declarations: [AutoCompleteComponent, InputComponent,  CalendarComponent, CheckboxComponent, ChipsComponent, EditorComponent,]
 })
 export class InputModule {
 }
