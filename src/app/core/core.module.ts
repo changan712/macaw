@@ -1,12 +1,20 @@
 import {NgModule, SkipSelf, Optional} from '@angular/core';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {StateService} from "./state.service";
+import {CarService} from "./car.service";
+import {HttpModule} from "@angular/http";
 
 
 @NgModule({
-    imports: [BrowserAnimationsModule],
-    providers:[
+    imports: [
+        HttpModule,
+        BrowserAnimationsModule
+
+    ],
+    providers: [
         StateService,
+        CarService,
+
     ],
     declarations: []
 })

@@ -1,0 +1,15 @@
+<h3 class="first">Single Column</h3>
+<p-dataTable [value]="cars1" (onPage)="onpage($event)" [rows]="2" [totalRecords] = "totalRecords1" lazy="true" [paginator]="true" (onSort)="onSort($event)" (onLazyLoad)="loadCarsLazy($event)">
+    <p-column field="vin" header="Vin" [sortable]="true"></p-column>
+    <p-column field="year" header="Year" [sortable]="true"></p-column>
+    <p-column field="brand" header="Brand" [sortable]="true"></p-column>
+    <p-column field="color" header="Color" [sortable]="true"></p-column>
+</p-dataTable>
+
+<h3>Multiple Columns</h3>
+<p-dataTable [value]="cars2" sortMode="multiple" (onSort)="onSort($event)">
+    <p-column field="vin" header="Vin" [sortable]="true"></p-column>
+    <p-column field="year" header="Year" [sortable]="true"></p-column>
+    <p-column field="brand" header="Brand" [sortable]="true"></p-column>
+    <p-column field="color" header="Color" [sortable]="true"></p-column>
+</p-dataTable>

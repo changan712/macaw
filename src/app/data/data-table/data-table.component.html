@@ -1,0 +1,18 @@
+<p-tabView (onChange)="tabChange($event)" [lazy]="true" [activeIndex]="activeIndex"> <!-- todo lazy not work-->
+    <p-tabPanel header="Basic">
+        <app-data-table-basic></app-data-table-basic>
+    </p-tabPanel>
+    <p-tabPanel header="Facets">
+        <app-data-table-facets></app-data-table-facets>
+    </p-tabPanel>
+    <p-tabPanel header="Templating">
+        <app-data-table-templating></app-data-table-templating>
+    </p-tabPanel>
+    <p-tabPanel header="ColGroup">
+        <app-data-table-col-group></app-data-table-col-group>
+    </p-tabPanel>
+    <p-tabPanel header="sort">
+        <app-data-table-sort></app-data-table-sort>
+    </p-tabPanel>
+</p-tabView>
+

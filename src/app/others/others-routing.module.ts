@@ -2,6 +2,10 @@ import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {OthersComponent} from "./others.component";
 import {AlgorithmComponent} from "./algorithm/algorithm.component";
+import {MyTabDemoComponent} from "./my-tab/my-tab-demo.component";
+
+
+
 
 const routes: Routes = [
     {
@@ -15,6 +19,10 @@ const routes: Routes = [
             {
                 path: 'algorithm',
                 component: AlgorithmComponent
+            },
+            {
+                path: 'mytab',
+                component: MyTabDemoComponent
             }
         ]
     }

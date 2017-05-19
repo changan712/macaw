@@ -20,6 +20,11 @@ const routes: Routes = [
 
     },
     {
+        path: 'data',
+        loadChildren: 'app/data/data.module#DataModule'
+
+    },
+    {
         path: 'others',
         loadChildren: 'app/others/others.module#OthersModule'
 

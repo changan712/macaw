@@ -1,0 +1,14 @@
+<p-panel header="DataGrid">
+    <p-dataGrid rows="5" [value]="list" paginator="1" totalRecords ="100"  lazy="true"  (onLazyLoad) = loadData($event) >
+
+        <ng-template let-item pTemplate="item" >
+            <p-panel [header]="item.id" styleClass="m
+">
+                {{item.label}}
+
+            </p-panel>
+        </ng-template>
+
+    </p-dataGrid>
+
+</p-panel>

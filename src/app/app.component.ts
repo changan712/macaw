@@ -10,7 +10,7 @@ import {StateService} from "./core/state.service";
 })
 export class AppComponent implements OnInit{
 
-    list = ['input', 'button', 'others'];
+    list = ['input', 'button', 'data','others'];
 
 
     msgs: Messages[] = [];
@@ -26,8 +26,6 @@ export class AppComponent implements OnInit{
             //todo 此处要从新set一次 this.msg 才能触发growl 内部的set changeHdl 逻辑,才能之后自动消失；
             this.msgs = [];
             this.msgs.push(res);
-            
-            console.log(res);
             
         })
     }

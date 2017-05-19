@@ -5,6 +5,11 @@ import {OthersRoutingModule} from './others-routing.module';
 import {AlgorithmComponent} from "./algorithm/algorithm.component";
 import {SharedModule} from "../shared/shared.module";
 import {OthersComponent} from "./others.component";
+import {MyTabComponent} from "./my-tab/my-tab.component";
+
+import {MyTabDemoComponent} from "./my-tab/my-tab-demo.component";
+import {MyTabItemComponent} from "./my-tab/my-tab-item.component";
+
 
 @NgModule({
     imports: [
@@ -13,7 +18,10 @@ import {OthersComponent} from "./others.component";
     ],
     declarations: [
         AlgorithmComponent,
-        OthersComponent
+        OthersComponent,
+        MyTabComponent,
+        MyTabItemComponent,
+        MyTabDemoComponent
     ]
 })
 export class OthersModule {

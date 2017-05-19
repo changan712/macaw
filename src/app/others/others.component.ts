@@ -7,7 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class OthersComponent implements OnInit {
 
-    links = ['algorithm'];
+    links = ['algorithm','mytab'];
 
     constructor() {
     }
